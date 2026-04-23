@@ -15,7 +15,7 @@ interface ChatInterfaceProps {
 
 // @ts-ignore — Vite replaces process.env.GEMINI_API_KEY at build time via define config
 const GEMINI_API_KEY: string = process.env.GEMINI_API_KEY || '';
-const GEMINI_MODEL = 'gemini-2.5-flash';
+const GEMINI_MODEL = 'gemini-3.0-flash';
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
 function buildSystemContext(results: AnalysisResponse[]): string {
